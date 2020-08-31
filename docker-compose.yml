@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - 8080:8080
+  db:
+    image: mysql:latest
+    ports:
+      - 3309:3306
+    environment:
+      MYSQL_DATABASE: bibliotech
+      MYSQL_USER: bibliotech
+      MYSQL_PASSWORD: bibliotech
+      MYSQL_ROOT_PASSWORD: root
+

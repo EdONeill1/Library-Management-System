@@ -1,0 +1,10 @@
+ie/bibliotech/controller/MainController.class
+main/java/ie/bibliotech/controller/MemberController.class
+main/java/ie/bibliotech/controller/ArtifactController.class
+main/java/ie/bibliotech/LoanRepository.class
+main/java/ie/bibliotech/model/Loan.class
+main/java/ie/bibliotech/BibliotechApplication.class
+main/java/ie/bibliotech/model/Artifact.class
+main/java/ie/bibliotech/model/Member.class
+main/java/ie/bibliotech/repository/ArtifactRepository.class
+main/java/ie/bibliotech/repository/MemberRepository.class

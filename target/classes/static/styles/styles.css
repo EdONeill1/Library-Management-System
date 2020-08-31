@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pIndexButton {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(216, 64, 1);
+  color: white;
+  width: 90%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+
+.pIndexButton:hover {
+  text-decoration: none;
+  background-color: rgb(216, 64, 1);
+  color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(216, 64, 1);
+  cursor: pointer;
+}
+
+.lIndexButton {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170, 0, 255);
+  color: white;
+  width: 90%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+
+.lIndexButton:hover {
+  text-decoration: none;
+  background-color: rgb(170, 0, 255);
+  color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170, 0, 255);
+  cursor: pointer;
+}
+
+.mIndexButton {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(0, 168, 243);
+  color: white;
+  width: 90%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+
+.mIndexButton:hover {
+  text-decoration: none;
+  background-color: rgb(0, 168, 243);
+  color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(0, 168, 243);
+  cursor: pointer;
+}
+
+.lLabel {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170, 0, 255);
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding-right: 1000px;
+  border-radius: 15px;
+}
+.lLabelV {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170, 0, 255);
+  color: white;
+  width: 25%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-decoration: none;
+
+  padding-right: 1000px;
+  margin: 4px 2px;
+
+  border-radius: 15px;
+}
+.lBackButton,
+.viewMembers {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170, 0, 255);
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+.actionArtifact {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170, 0, 255);
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+
+.lBackButton {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170, 0, 255);
+  color: white;
+  width: 20%;
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+}
+
+.top {
+  height: 30vh;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.35)),
+      to(rgba(0, 0, 0, 0.35))
+    ),
+    url(/images/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url('../static/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.top h1 {
+  color: aquamarine;
+  text-align: center;
+  padding-top: 10%;
+}
+
+/* Middle section */
+.middle {
+  padding: 30px;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #e7e7e7;
+}
+
+.add_container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.add_btn {
+  font-size: 35px;
+  background: none;
+  border: none;
+  color: #28b9b5;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.1;
+  margin-left: 10px;
+}
+
+.add_btn:active {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+}
+
+.add_btn:focus {
+  outline: none;
+}
+
+.search {
+  border: 3px;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+
+/***********************Member/librarian Login CSS**********************/
+.memberLogInBody {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../static/images/background.jpg');
+}
+
+.bookImg img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin-top: 25%;
+}
+
+.librarianForm {
+  width: 480px;
+  height: 500px;
+  background-color: #000;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 18%;
+  opacity: 80%;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.memberForm {
+  width: 480px;
+  height: 500px;
+  background-color: #000;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 18%;
+  opacity: 80%;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+.librarianForm h3 {
+  display: flex;
+  text-align: center;
+  color: rgb(170,0,255);
+  margin-top: 20%;
+  margin-left: 30%;
+}
+.memberForm h3 {
+  display: flex;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 30%;
+  color: rgb(0,168,243);
+}
+.loginInputUser {
+  border: 2px solid #84ffff;
+  margin-left: 12.5%;
+  margin-top: 8%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  border-radius: 60px;
+  width: 360px;
+  height: 75px;
+
+  outline: none;
+  text-align: center;
+}
+.loginInputPass {
+  border: 2px solid rgb(170,0,255);
+  background-color: #000;
+  color: rgb(170,0,255);
+  margin-left: 12.5%;
+  margin-top: 10px;
+  display: flex;
+  border-radius: 60px;
+  outline: none;
+  width: 360px;
+  height: 75px;
+  text-align: center;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  width: 140px;
+  height: 60px;
+  outline: none;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+}
+
+.memberForm button {
+  background-color: #000;
+  color: #84ffff;
+  outline: none;
+  border-color: #84ffff;
+  transition: border-color 0.5ms;
+}
+
+.memberForm button:hover {
+  border-color: rgb(0,168,243);
+  color: rgb(0,168,243);
+}
+
+.memberForm input {
+  background-color: #000;
+}
+
+.librarianForm button {
+  background-color: #000;
+  color: rgb(0,168,243);
+  outline: none;
+  border-color: rgb(0,168,243);
+  transition: border-color 0.5ms;
+}
+
+.librarianForm button:hover {
+  border-color: rgb(170,0,255);
+  color: rgb(170,0,255);
+}
+
+/***********************Sign up CSS**********************/
+
+.signUpBody {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url('../static/images/background.jpg');
+}
+.signUpForm {
+  width: 80%;
+  height: 80%;
+  background-color: #000;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 18%;
+  opacity: 85%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.signUpForm h3 {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10%;
+  color: black;
+}
+
+.signUpInputUser {
+  border: 2px solid #84ffff;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  border-radius: 10px;
+  width: 360px;
+  height: 75px;
+  background-color: #000;
+  color: #fff;
+  outline: none;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.signUpInputPass {
+  border: 2px solid #cd65d6;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  background-color: #000;
+  color: #cd65d6;
+  border-radius: 10px;
+  outline: none;
+  width: 360px;
+  height: 75px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.signUpButton {
+  opacity: 100%;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  height: 60px;
+  margin: auto;
+  text-decoration: none;
+  background-color: #000;
+  color: rgb(216,64,1);
+  margin-top: 20px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  transition: border-color: 0.5s;
+  border-color: rgb(216,64,1);
+}
+
+.signUpButton:hover {
+  border-color: rgb(0,168,243);
+  color: rgb(0,168,243);
+}
+.signUpForm button {
+  outline: none;
+}
+
+.lHeaderBtn {
+  background-color: black; 
+  border-style: solid solid solid solid; 
+  border-color: rgb(170,0,255);
+  color: white;
+  font-family: Arial; 
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer; 
+  transition: background-color 0.5s;
+}
+
+.lHeaderBtn:hover{
+  text-decoration: none;
+  background-color: rgb(170,0,255);
+  color:black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170,0,255);
+  cursor: pointer;
+}

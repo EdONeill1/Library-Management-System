@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Bibliotech - Members</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles/styles_Sam.css"/>
+        <link rel="icon" href="images/librarianLogo.png"/>
+        <style type="text/css">
+            .table tbody tr td {
+            font-style:italic;
+            vertical-align:middle;
+          }
+          td {
+            color: white;
+          }
+          input.search_bar{
+            margin-bottom:20px;
+            margin-left: 45%;
+            font-size:x-large;
+            text-align:left;
+            padding-left: 10px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            background-color: #000;
+            color: white;
+            border-radius: 10px;
+            border-color: rgb(170,0,255);
+          }
+          .search_bar:focus{
+            outline: none;
+          }
+          .tdBtn {
+            border-color: rgb(170, 0, 255);
+          }
+          .tdBtn:hover{
+            text-decoration: none;
+            background-color: rgb(170,0,255);
+            color:black;
+            border-style: solid solid solid solid;
+            border-color: rgb(170,0,255);
+            cursor: pointer;
+          }
+        </style>
+    </head>
+    <body style="background-image: url('images/background.jpg');">
+    <div class="Title bar" style="text-align: left; background: rgb(0,0,0); ">
+            <img src="images/librarianLogo.png" align="left" height="90px" style="padding-left: 1%; padding-right: 0.5%" />
+            <h1 style="color: rgb(170,0,255)"><em>BiblioTech</em></h1>
+            <p style="font-family:Arial; color: white;"><em>Members</em></p>
+      <hr style="color: rgb(170,0,255); border-top: 2px solid rgb(170,0,255);">
+    </div>
+    <br><br>
+      <div class="col-lg">
+        <a href="/libraryIndex"><img class="portalIcon" style="height: 90px;" src="images/chevronL.png"></a>
+        <form method="GET" action="/search-Member">
+          <input class="search_bar" type="text" placeholder="Search for a member..." name="search">
+          <button class="lHeaderBtn" style="padding: 7px;" type="submit">Search</button>
+        </form>
+          <form method="GET" action="/editMember">
+              <input class="search_bar" type="text" placeholder="Edit a member..." name="search">
+              <button class="lHeaderBtn" style="padding: 7px;" type="submit">Edit</button>
+          </form>
+      </div>
+  </div>
+  <form>
+      <div class="row">
+          <div class="col-lg-12 align-self-center">
+              <table class="loanTable" style="margin-left: 20%; border-color: rgb(170,0,255);">
+                  <thead>
+                      <tr>
+                        <th style="text-align: left; padding-left: 40px; padding-right:100px; margin-right: 100px; color: rgb(170,0,255);"><h5>Member Name</h5></th>
+                        <th style="text-align: left; padding-left: 40px; padding-right:100px; margin-right: 100px; color: rgb(170,0,255);"><h5>Current Loans</h5></th>
+                        <th style="text-align: left; padding-left: 40px; padding-right:100px; margin-right: 100px; color: rgb(170,0,255);"><h5>Historical Loans</h5></th>
+                      </tr>
+                  </thead>
+                  <tbody th:each="member : ${members}">
+                      <tr>
+                        <td style="padding-right: 20px; padding-left: 50px; border-bottom-left-radius: 15px;" th:text=${member.name}></td>
+                          <td style="padding-right: 20px; padding-left: 50px;" th:text=${member.currentLoan}></td>
+                        <td style="padding-right: 20px; padding-left: 50px;"><a th:href="@{/historicalLoans(id=${member.id})}"  class="tdBtn">Historical Loans</a></td>
+                        <td style="padding-right: 20px; padding-left: 20px;"><a th:href="@{/viewMembers(id=${member.id})}" class="tdBtn">View</a></td>
+                        <td style="padding-right: 20px; padding-left: 20px; border-bottom-right-radius: 15px;"><a th:href="@{/removeMember(id=${member.id})}" class="tdBtn">Remove</a></td>
+                      </tr>
+                  </tbody>
+              </table>
+              <br><br>
+              <a class="lHeaderBtn" href="/create_member" style="margin-left: 65%">Create a Member</a>
+          </div>
+      </div>
+  </form>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

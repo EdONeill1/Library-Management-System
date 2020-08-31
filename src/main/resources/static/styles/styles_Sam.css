@@ -1,0 +1,293 @@
+.pIndexButton {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(216,64,1);
+  color: white;
+  width: 90%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;  
+  transition: background-color 0.5s;
+}
+
+.pIndexButton:hover{
+  text-decoration: none;
+  background-color: rgb(216,64,1);
+  color:black;
+  border-style: solid solid solid solid;
+  border-color: rgb(216,64,1);
+  cursor: pointer;
+}
+
+.lIndexButton {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170,0,255);
+  color: white;
+  width: 90%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;  
+  transition: background-color 0.5s;
+}
+
+.lIndexButton:hover{
+  text-decoration: none;
+  background-color: rgb(170,0,255);
+  color:black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170,0,255);
+  cursor: pointer;
+}
+
+.mIndexButton {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(0,168,243);
+  color: white;
+  width: 90%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;  
+  transition: background-color 0.5s;
+}
+
+.mIndexButton:hover{
+  text-decoration: none;
+  background-color: rgb(0,168,243);
+  color:black;
+  border-style: solid solid solid solid;
+  border-color: rgb(0,168,243);
+  cursor: pointer;
+}
+
+.lLabel{
+  color: white;
+  font-family: Arial;
+  font-size: 1.25em;
+  text-decoration: none;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 1000px;
+  padding-left: 10px;
+}
+
+.lLabelV{
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170,0,255);
+  color: white;
+  width: 25%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding-right: 1000px;
+  margin: 4px 2px;
+  border-radius: 15px;  
+}
+
+.lBackButton, .viewMembers{
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170,0,255);
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;  
+  transition: background-color 0.5s;
+  float: right;
+
+
+}
+
+.lBackButton{
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170,0,255);
+  color: white;
+  width: 20%;
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;  
+  transition: background-color 0.5s;
+  
+}
+
+.portalIcon {
+  transition: transform .2s;
+}
+
+.portalIcon:hover {
+  transform: scale(1.25);
+}
+
+.iconDescription {
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.iconWrap:hover .iconDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mHeaderBtn {
+  background-color: black; 
+  border-style: solid solid solid solid; 
+  border-color: rgb(0,168,243);
+  color: white;
+  font-family: Arial; 
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer; 
+  transition: background-color 0.5s;
+}
+
+.mHeaderBtn:hover{
+  text-decoration: none;
+  background-color: rgb(0,168,243);
+  color:black;
+  border-style: solid solid solid solid;
+  border-color: rgb(0,168,243);
+  cursor: pointer;
+}
+
+.lHeaderBtn {
+  background-color: black; 
+  border-style: solid solid solid solid; 
+  border-color: rgb(170,0,255);
+  color: white;
+  font-family: Arial; 
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer; 
+  transition: background-color 0.5s;
+}
+
+.lHeaderBtn:hover{
+  text-decoration: none;
+  background-color: rgb(170,0,255);
+  color:black;
+  border-style: solid solid solid solid;
+  border-color: rgb(170,0,255);
+  cursor: pointer;
+}
+
+.pHeaderBtn {
+  background-color: black; 
+  border-style: solid solid solid solid; 
+  border-color: rgb(216,64,1);
+  color: white;
+  font-family: Arial; 
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer; 
+  transition: background-color 0.5s;
+}
+
+.pHeaderBtn:hover{
+  text-decoration: none;
+  background-color: rgb(216,64,1);
+  color:black;
+  border-style: solid solid solid solid;
+  border-color: rgb(216,64,1);
+  cursor: pointer;
+}
+
+.loanTable {
+  display: inline-block;
+  background-color: black; 
+  border-style: solid solid solid solid; 
+  font-family: Arial; 
+  text-align: center; 
+  color: rgb(0,168,243);
+  border-color: rgb(0,168,243);
+  border-radius: 15px;
+}
+
+.loanRow {
+  margin-bottom: 35px;
+}
+
+.tdBtn {
+  background-color: black;
+  border-style: solid solid solid solid;
+  border-color: rgb(0,168,243);
+  color: white;
+  width: 105%;
+  height: 30px;
+  text-align: center;
+  font-family: Arial;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer; 
+  transition: background-color 0.5s;
+}
+
+.tdBtn:hover{
+  text-decoration: none;
+  background-color: rgb(0,168,243);
+  color:black;
+  border-style: solid solid solid solid;
+  border-color: rgb(0,168,243);
+  cursor: pointer;
+}
+
+tr:nth-child(odd) {
+  background-color: #333333;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+tr:nth-child(even) {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+th {
+  background-color: #000;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
